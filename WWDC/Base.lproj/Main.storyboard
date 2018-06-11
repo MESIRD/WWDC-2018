@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltJ-kZ-2rI">
+                                <rect key="frame" x="147.5" y="557" width="80" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.17485795020552664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="IFq-H2-ktD"/>
+                                    <constraint firstAttribute="height" constant="80" id="p5H-LA-ChG"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggG-Oo-Mw7">
+                                <rect key="frame" x="266" y="575" width="93" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="J1m-ue-5jF"/>
+                                    <constraint firstAttribute="height" constant="44" id="rQH-IS-ksf"/>
+                                </constraints>
+                                <state key="normal" title="Recognize"/>
+                                <connections>
+                                    <action selector="pressOnRecognizeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ojf-VK-GLf"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is mesird, I'm try to show you something new about Siri and Shortcuts in iOS 12." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-Iu-7tC">
+                                <rect key="frame" x="16" y="20" width="343" height="416"/>
+                                <color key="backgroundColor" red="0.96226658938462251" green="0.96226658938462251" blue="0.96226658938462251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KC-Al-ld1">
+                                <rect key="frame" x="0.0" y="555" width="124" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="X4B-kt-S7A"/>
+                                    <constraint firstAttribute="width" constant="124" id="XKl-zO-RGl"/>
+                                </constraints>
+                                <state key="normal" title="Speak"/>
+                                <connections>
+                                    <action selector="pressOnSpeakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C2j-ZA-dZb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3KC-Al-ld1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2bN-0b-EIJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ggG-Oo-Mw7" secondAttribute="trailing" constant="16" id="5mD-bo-pOl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ltJ-kZ-2rI" secondAttribute="bottom" constant="30" id="9gI-Tl-yoN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ggG-Oo-Mw7" secondAttribute="bottom" constant="48" id="QEe-e8-q5H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3KC-Al-ld1" secondAttribute="bottom" constant="30" id="QPs-nY-k7f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LyB-Iu-7tC" secondAttribute="trailing" constant="16" id="cS5-KG-O2T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LyB-Iu-7tC" secondAttribute="bottom" constant="231" id="r8h-jC-gVn"/>
+                            <constraint firstItem="LyB-Iu-7tC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wAF-6m-1LD"/>
+                            <constraint firstItem="ltJ-kZ-2rI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x2C-co-ONQ"/>
+                            <constraint firstItem="LyB-Iu-7tC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zy4-sj-OCE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayPanel" destination="LyB-Iu-7tC" id="Atd-Jy-hNX"/>
+                        <outlet property="recordButton" destination="ltJ-kZ-2rI" id="fip-Kp-s5R"/>
+                        <outlet property="speakButton" destination="3KC-Al-ld1" id="feG-pz-Dae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288.80000000000001" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
